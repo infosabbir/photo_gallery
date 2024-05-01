@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:photo_gallery/constants.dart';
 
 final randomSuggesion = Random.secure().nextInt(10);
@@ -36,7 +37,7 @@ class SelectedPage extends StatelessWidget {
         ),
         title: Text(
           texts,
-          style: const TextStyle(
+          style: GoogleFonts.roboto(
             fontSize: 20,
             fontWeight: FontWeight.w600,
             color: MyColors.whiteColor,
@@ -73,7 +74,7 @@ class SelectedPage extends StatelessWidget {
                       children: [
                         Text(
                           '$texts with nature',
-                          style: const TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: 24,
                             fontWeight: FontWeight.w400,
                           ),
@@ -82,11 +83,11 @@ class SelectedPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 10),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Text(
                       'Being in nature, or even viewing scenes of nature, reduces anger, fear, and stress and increases pleasant feelings',
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
                       ),
@@ -116,11 +117,11 @@ class SelectedPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 10),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Text(
                       'Sugession',
-                      style: TextStyle(fontSize: 20),
+                      style: GoogleFonts.poppins(fontSize: 20),
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -141,7 +142,7 @@ class SelectedPage extends StatelessWidget {
                               bottom: 60,
                               child: Text(
                                 MyData.texts[randomSuggesion],
-                                style: const TextStyle(
+                                style: GoogleFonts.roboto(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -165,7 +166,7 @@ class SelectedPage extends StatelessWidget {
                               bottom: 60,
                               child: Text(
                                 MyData.texts[randomSuggesion + 1],
-                                style: const TextStyle(
+                                style: GoogleFonts.roboto(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -208,7 +209,7 @@ class SelectedPage extends StatelessWidget {
                           const SizedBox(height: 16),
                           Text(
                             '$texts with nature',
-                            style: const TextStyle(
+                            style: GoogleFonts.poppins(
                               fontSize: 24,
                               fontWeight: FontWeight.w400,
                             ),
@@ -216,9 +217,9 @@ class SelectedPage extends StatelessWidget {
                           const SizedBox(
                             height: 10,
                           ),
-                          const Text(
+                          Text(
                             'Being in nature, or even viewing scenes of nature,\nreduces anger, fear, and stress and increases \npleasant feelings',
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               fontSize: 15,
                               fontWeight: FontWeight.w400,
                             ),
@@ -245,9 +246,9 @@ class SelectedPage extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 10),
-                          const Text(
+                          Text(
                             'Sugession',
-                            style: TextStyle(fontSize: 20),
+                            style: GoogleFonts.poppins(fontSize: 20),
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -265,7 +266,7 @@ class SelectedPage extends StatelessWidget {
                                       bottom: 60,
                                       child: Text(
                                         MyData.texts[randomSuggesion],
-                                        style: const TextStyle(
+                                        style: GoogleFonts.roboto(
                                           color: Colors.white,
                                           fontWeight: FontWeight.w600,
                                         ),
@@ -287,7 +288,7 @@ class SelectedPage extends StatelessWidget {
                                       bottom: 60,
                                       child: Text(
                                         MyData.texts[randomSuggesion + 1],
-                                        style: const TextStyle(
+                                        style: GoogleFonts.roboto(
                                           color: Colors.white,
                                           fontWeight: FontWeight.w600,
                                         ),

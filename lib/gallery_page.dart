@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:photo_gallery/constants.dart';
 import 'package:photo_gallery/selected_page.dart';
 
@@ -50,7 +51,7 @@ class GalleryPage extends StatelessWidget {
                       left: 40,
                       child: Text(
                         MyData.texts[index],
-                        style: const TextStyle(
+                        style: GoogleFonts.roboto(
                           color: Colors.white,
                           fontWeight: FontWeight.w600,
                         ),
