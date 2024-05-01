@@ -1,5 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:photo_gallery/constants.dart';
 import 'package:photo_gallery/gallery_page.dart';
 
@@ -40,9 +41,9 @@ class HomePage extends StatelessWidget {
           Icons.arrow_back_ios_new,
           color: MyColors.whiteColor,
         ),
-        title: const Text(
+        title:  Text(
           'Photo Gallery',
-          style: TextStyle(
+          style: GoogleFonts.roboto(
             fontSize: 20,
             fontWeight: FontWeight.w600,
             color: MyColors.whiteColor,
