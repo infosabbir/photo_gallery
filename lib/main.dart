@@ -18,46 +18,34 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: HomePage(),
-      ),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white54,
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: MyColors.greenColor,
-        leading: const Icon(
-          Icons.arrow_back_ios_new,
-          color: MyColors.whiteColor,
-        ),
-        title:  Text(
-          'Photo Gallery',
-          style: GoogleFonts.roboto(
-            fontSize: 20,
-            fontWeight: FontWeight.w600,
+        appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: MyColors.greenColor,
+          leading: const Icon(
+            Icons.arrow_back_ios_new,
             color: MyColors.whiteColor,
           ),
-        ),
-        actions: const [
-          Icon(
-            Icons.more_vert,
-            color: MyColors.whiteColor,
+          title: Text(
+            'Photo Gallery',
+            style: GoogleFonts.roboto(
+              fontSize: 20,
+              fontWeight: FontWeight.w600,
+              color: MyColors.whiteColor,
+            ),
           ),
-          SizedBox(width: 16),
-        ],
+          actions: const [
+            Icon(
+              Icons.more_vert,
+              color: MyColors.whiteColor,
+            ),
+            SizedBox(width: 16),
+          ],
+        ),
+        body: const GalleryPage(),
       ),
-      body: const GalleryPage(),
     );
   }
 }

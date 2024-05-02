@@ -31,35 +31,37 @@ class GalleryPage extends StatelessWidget {
               );
               debugPrint('Tapped on item $index');
             },
-            child: SizedBox(
-              width: 150,
-              height: 150,
-              child: ClipRRect(
-                clipBehavior: Clip.hardEdge,
-                child: Stack(
-                  children: [
-                    Opacity(
-                      opacity: 0.9,
-                      child: Image.asset(
+            child: Stack(
+              children: [
+                Container(
+                  margin: const EdgeInsets.all(12),
+                  width: 180,
+                  height: 180,
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(30),
+                    image: DecorationImage(
+                      image: AssetImage(
                         MyData.images[index],
-                        filterQuality: FilterQuality.high,
-                        fit: BoxFit.fill,
                       ),
+                      opacity: 0.8,
+                      fit: BoxFit.cover,
+                      filterQuality: FilterQuality.high,
                     ),
-                    Positioned(
-                      bottom: 60,
-                      left: 40,
-                      child: Text(
-                        MyData.texts[index],
-                        style: GoogleFonts.roboto(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
-              ),
+                Positioned(
+                  bottom: 30,
+                  left: 30,
+                  child: Text(
+                    MyData.texts[index],
+                    style: GoogleFonts.roboto(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ],
             ),
           );
         });

@@ -8,16 +8,16 @@ class MyColors {
 
 class MyData {
   static List<String> images = [
-    'assets/img/mood.png',
-    'assets/img/asthetic.png',
-    'assets/img/animal.png',
-    'assets/img/city.png',
-    'assets/img/travel.png',
-    'assets/img/sky.png',
-    'assets/img/road.png',
-    'assets/img/flower.png',
-    'assets/img/flower.png',
-    'assets/img/leaves.png',
+    'assets/img/mood.jpg',
+    'assets/img/asthetic.jpg',
+    'assets/img/animal.jpg',
+    'assets/img/city.jpg',
+    'assets/img/travel.jpg',
+    'assets/img/sky.jpg',
+    'assets/img/road.jpg',
+    'assets/img/flower.jpg',
+    'assets/img/flower.jpg',
+    'assets/img/leaves.jpg',
   ];
 
   static List<String> texts = [
